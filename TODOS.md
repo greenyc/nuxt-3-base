@@ -8,6 +8,7 @@
 - Set up Husky
 - Check if StylisticJs in ESLint replaces Prettier
 - Write up explanation of linting
+- Fix git email and update prior commits to be associated with correct account
 
 ## Mid-term
 
