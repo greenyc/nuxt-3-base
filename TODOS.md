@@ -1,14 +1,14 @@
 # TODOS
 
-## Immediately
+## Short-term
 
-- Copy Matt Pocock's TS config
 - Set up linting
 - Set up Playwright
 - Set up Storybook
 
 ## Mid-term
 
+- Update README to explain project and running it
 - Swap NPM out for a faster package manager such as pnpm
 
 ## Long-term
