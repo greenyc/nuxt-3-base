@@ -15,7 +15,7 @@
     "lint:prettier": "prettier . --check",
     "lint:prettier:fix": "prettier --write --list-different .",
     "lintfix": "eslint . --fix && prettier --write --list-different .",
-    "clean": "rm -r node_modules/ .nuxt/"
+    "clean": "rm -r node_modules/ .nuxt/ package-lock.json"
   },
   "dependencies": {
     "nuxt": "^3.12.2"
