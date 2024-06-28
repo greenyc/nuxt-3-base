@@ -7,5 +7,5 @@
 
 <script setup lang="ts">
 const a: string = 'abc'
-    console.log(a)
+console.log(a)
 </script>
