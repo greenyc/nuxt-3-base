@@ -10,7 +10,7 @@
     "postinstall": "nuxt prepare",
     "typecheck": "npx nuxi typecheck",
     "lint": "eslint .",
-    "lintfix": "eslint . --fix",
+    "lintfix": "eslint --max-warnings 0 . --fix",
     "clean": "rm -r node_modules/ .nuxt/ package-lock.json",
     "prepare": "husky"
   },
@@ -22,7 +22,11 @@
     "@stylistic/eslint-plugin": "^2.3.0",
     "eslint": "^8.57.0",
     "husky": "^9.0.11",
+    "lint-staged": "^15.2.7",
     "typescript": "~5.4.5",
     "vue-tsc": "^1.8.27"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue}": "npm run lintfix"
   }
 }
