@@ -6,7 +6,8 @@
 - Set up Playwright
 - Set up Storybook
 - Set up Husky
-- Check if stylisticJs in ESLint replaces Prettier
+- Check if StylisticJs in ESLint replaces Prettier
+- Write up explanation of linting
 
 ## Mid-term
 
