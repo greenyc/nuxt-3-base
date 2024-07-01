@@ -2,6 +2,10 @@
 
 ## Short-term
 
+- Fix following error in `pages/index.vue`:
+
+`Module '"/home/ciaran/code/nuxt-3-base/components/core/c-button.vue"' has no default export.ts-plugin(1192)`
+
 - Set up Playwright
 - Set up Storybook
 
