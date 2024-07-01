@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare",
     "typecheck": "npx nuxi typecheck",
     "clean": "rm -r node_modules/ .nuxt/ package-lock.json",
+    "lint": "eslint . --fix && prettier --write --list-different .",
     "prepare": "husky"
   },
   "dependencies": {
@@ -33,6 +34,6 @@
     "eslint": "^9.6.0"
   },
   "lint-staged": {
-    "*.{js,ts,vue}": ""
+    "*.{js,ts,vue}": "npm run lint"
   }
 }
