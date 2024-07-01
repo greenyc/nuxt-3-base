@@ -11,18 +11,3 @@ The tsconfig is based on [Matt Pocock's tsconfig cheat sheet](https://www.totalt
 ### Why is the TypeScript version at ~5.4? Why is the vue-tsc version at ^1?
 
 Due to an [issue with Typechecking](https://github.com/fi3ework/vite-plugin-checker/pull/327) which is mentioned on the [Nuxt website's TypeScript section](https://nuxt.com/docs/guide/concepts/typescript), vue-tsc can't be upgraded past ^1 and TypeScript can't be upgraded past ~5.4. If the versions were to be upgraded past that currently, typechecking wouldn't work on linting/build, which isn't ideal. When this issue is resolved, both can be upgraded.
-
-## Linting
-
-### Why is there no Prettier?
-
-Antfu explains it better than I can in [his blogpost](https://antfu.me/posts/why-not-prettier). I am using [ESLint Stylistic](https://eslint.style/) for the linting in this project. To understand this, please read the [ESLint Stylistic FAQs page](https://eslint.style/guide/faq). To enable formatting on saving in VSCode, add the following config to your `settings.json`:
-
-```json
-{
-  "editor.formatOnSave": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "always"
-  },
-}
-```

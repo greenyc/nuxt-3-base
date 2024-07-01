@@ -9,8 +9,6 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "typecheck": "npx nuxi typecheck",
-    "lint": "eslint .",
-    "lintfix": "eslint --max-warnings 0 . --fix",
     "clean": "rm -r node_modules/ .nuxt/ package-lock.json",
     "prepare": "husky"
   },
@@ -18,15 +16,23 @@
     "nuxt": "^3.12.2"
   },
   "devDependencies": {
-    "@nuxt/eslint": "^0.3.13",
-    "@stylistic/eslint-plugin": "^2.3.0",
-    "eslint": "^8.57.0",
+    "@eslint/js": "^9.6.0",
+    "@typescript-eslint/parser": "^7.14.1",
+    "eslint": "^9.6.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-vue": "^9.26.0",
+    "globals": "^15.7.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.7",
+    "prettier": "3.3.2",
     "typescript": "~5.4.5",
+    "typescript-eslint": "^7.14.1",
     "vue-tsc": "^1.8.27"
   },
+  "overrides": {
+    "eslint": "^9.6.0"
+  },
   "lint-staged": {
-    "*.{js,ts,vue}": "npm run lintfix"
+    "*.{js,ts,vue}": ""
   }
 }
