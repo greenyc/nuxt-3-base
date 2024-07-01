@@ -24,6 +24,10 @@ export default [
     }
   },
   {
+    files: ['pages/**/*.vue'],
+    rules: { 'vue/multi-word-component-names': 0 }
+  },
+  {
     ignores: ['node_modules', 'dist', 'public', '.nuxt']
   },
   eslintConfigPrettier
