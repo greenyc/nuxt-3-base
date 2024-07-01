@@ -2,17 +2,15 @@
 
 ## Short-term
 
-- Set up linting
 - Set up Playwright
 - Set up Storybook
-- Set up Husky
-- Write up explanation of linting
 
 ## Mid-term
 
 - Update README to explain project and running it
 - Swap NPM out for a faster package manager such as pnpm
 - Set up Zod and write examples
+- Write up explanation of linting
 
 ## Long-term
 
